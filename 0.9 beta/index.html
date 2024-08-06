@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/musicplayerstyle.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Thunder MusicPlayer</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="music-info">
+            <h1 class="music-title"><i class="bi bi-vinyl-fill"></i> <b id="musicTitle"></b></h1>
+            <h2 class="music-artist"><i class="bi bi-person-arms-up"></i> <b id="musicArtist"></b></h2>
+        </div>
+
+        <div class="music-cover">
+            <i class="bi bi-music-note"></i>
+            <br>
+        </div>
+
+        <audio id="audioPlayer" >
+            <source src="" id="audioPlayerSource" hidden>
+        </audio>
+
+        <div class="music-navigation">
+            <input type="range" id="musicProgress" class="music-progress" max="100" value="0">
+            <span class="music-currentTime" id="currentTimeSpan" style="float: inline-start;">00:00</span>
+            <span class="music-duration" id="durationSpan" style="float: inline-end;">00:00</span>
+            <div class="button-group">
+                <button id="btnPrev" class="btn-prev"><i class="bi bi-chevron-left"></i></button>
+                <button id="btnPlay" class="btn-play"><i class="bi bi-caret-right" id="musicState"></i></button>
+                <button id="btnNext" class="btn-next"><i class="bi bi-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <div class="player-option">
+            <button class="btn-playlist" id="btnPlayList"><i class="bi bi-music-note-list"></i></button>
+            <button class="btn-info" id="btnInfo"><i class="bi bi-info-lg"></i></button>
+
+            <div class="menu menu-playlist" id="menuPlayList">
+                <div class="container">
+                    <button class="btn-close" id="btnClose"><i class="bi bi-arrow-left"></i></button>
+                    <h1 id="playlistText"><i class="bi bi-music-note-list"></i> Playlist</h1>
+                    <table class="table-playlist">
+                        <thead>
+                            <tr>
+                                <td id="tdHead"> </td>
+                                <td id="tdHead">Title</td>
+                                <td id="tdHead">Artist</td>
+                            </tr>
+                        </thead>
+                        <tbody id="playlistBody">
+                            <!-- <tr>
+                                <td id="tdBody">
+                                    <div class="music-cover-mini" id="miniMusicCover">
+                                        <i class="bi bi-music-note"></i>
+                                        <br>
+                                    </div>
+                                </td>
+                                <td id="tdBody">Title</td>
+                                <td id="tdBody">Artist</td>
+                            </tr>
+
+                            <tr>
+                                <td id="tdBody">
+                                    <div class="music-cover-mini">
+                                        <i class="bi bi-music-note"></i>
+                                        <br>
+                                    </div>
+                                </td>
+                                <td id="tdBody">Title</td>
+                                <td id="tdBody">Artist</td>
+                            </tr>
+
+                            <tr>
+                                <td id="tdBody">
+                                    <div class="music-cover-mini">
+                                        <i class="bi bi-music-note"></i>
+                                        <br>
+                                    </div>
+                                </td>
+                                <td id="tdBody">Title</td>
+                                <td id="tdBody">Artist</td>
+                            </tr>
+
+                            <tr>
+                                <td id="tdBody">
+                                    <div class="music-cover-mini">
+                                        <i class="bi bi-music-note"></i>
+                                        <br>
+                                    </div>
+                                </td>
+                                <td id="tdBody">Title</td>
+                                <td id="tdBody">Artist</td>
+                                <td id="tdBody">Duration</td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="menu menu-info" id="menuInfo">
+                <div class="container">
+                    <button class="btn-close" id="btnClose"><i class="bi bi-arrow-left"></i></button>
+                    <h1 id="infoText"><i class="bi bi-info-lg"></i> About programmer</h1>
+                    <label id="infoText">Programmer & Designer : Arshia-A</label>
+                    <br>
+
+                    <div class="music-cover" id="test">
+                        <i class="bi bi-music-note"></i>
+                        <br>
+                    </div>
+
+                    <label id="infoText"><i class="bi bi-github"></i> Github : https://github.com/Arshiya-A</label>
+                    <br>
+                    <label id="infoText">Version : 0.9 Beta </label>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <style data="thump" type="text/css"></style>
+    <style data="thump2" type="text/css"></style>
+
+    <script src="js/User.js"></script>
+    <script src="js/Data/menumanager.js"></script>
+    <script src="js/Data/graphic.js"></script>
+    <script src="js/Data/musicplayer.js"></script>
+
+
+
+</body>
+
+</html>

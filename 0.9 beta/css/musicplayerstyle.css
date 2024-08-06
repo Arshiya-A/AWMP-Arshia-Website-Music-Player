@@ -1,0 +1,324 @@
+body,
+html {
+    background-color: #142C54;
+}
+
+.container {
+    width: 75%;
+    padding: 25px;
+    margin: auto;
+
+    border: solid #244C6C 1px;
+    border-radius: 35px;
+}
+
+.music-info {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #04ACCC;
+    margin: auto;
+
+
+    text-align: center;
+}
+
+.music-info>h1 {
+    font-size: 2em;
+}
+
+.music-info>h2 {
+    font-size: 1em;
+}
+
+.music-title {
+    margin: 50px 0px 0px 0px;
+}
+
+
+.music-cover {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    border: #0C7C94 3px solid;
+    border-radius: 10%;
+}
+
+.music-cover-mini {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background-color: #244C6C;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    border: #0C7C94 3px solid;
+    border-radius: 10%;
+}
+
+
+
+.music-cover>i {
+    font-size: 8em;
+    color: #142C54;
+
+}
+
+.music-cover-mini>i {
+    font-size: 3em;
+    color: #04ACCC;
+
+}
+
+.button-group {
+    margin: 85px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button {
+    border: solid #0C7C94 1px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+
+
+
+.button-group>.btn-prev,
+.btn-next {
+    background-color: #0C7C94;
+    color: #142C54;
+    font-size: 35px;
+    transition: 0.2s;
+    margin: 15px;
+
+}
+
+.button-group>.btn-prev:hover,
+.btn-next:hover {
+    scale: 1.2 1.2;
+
+}
+
+.button-group>.btn-prev:focus,
+.btn-next:focus {
+    background-color: #04ACCC;
+    color: #142C54;
+    font-size: 35px;
+}
+
+.button-group>.btn-play {
+    scale: 1.5 1.5;
+    font-size: 50px;
+    color: #142C54;
+    margin: 15px;
+
+}
+
+.music-progress {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+
+    margin: 85px 0px 0px 0px;
+    height: 2px;
+    background-color: #04ACCC;
+}
+
+
+.music-progress::-moz-range-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+
+    height: 25px;
+    width: 25px;
+    border: solid #04ACCC;
+    border-radius: 50%;
+    background-color: #0C7C94;
+}
+
+.music-progress::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+
+    height: 25px;
+    width: 25px;
+    border: solid #04ACCC;
+    border-radius: 50%;
+    background-color: #0C7C94;
+}
+
+.music-navigation>.music-progress::-moz-range-thumb:hover {
+    transition: 0.5s;
+    appearance: none;
+    -webkit-appearance: none;
+
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+
+.music-navigation>.music-progress::-webkit-slider-thumb:hover {
+    transition: 0.5s;
+    appearance: none;
+    -webkit-appearance: none;
+
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.music-navigation>span {
+    color: #04ACCC;
+    margin: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.btn-playlist {
+    position: absolute;
+    top: 3%;
+    left: 13%;
+
+    width: 50px;
+    height: 50px;
+    background-color: #0C7C94;
+    color: #142C54;
+    font-size: 20px;
+
+    transition: 0.2s;
+
+}
+
+.btn-info {
+    position: absolute;
+    top: 3%;
+    right: 13%;
+
+    width: 50px;
+    height: 50px;
+    background-color: #0C7C94;
+    color: #142C54;
+    font-size: 20px;
+
+
+    transition: 0.2s;
+
+}
+
+.player-option>.btn-playlist:hover {
+    scale: 1.2 1.2;
+}
+
+.player-option>.btn-playlist:focus {
+    background-color: #04ACCC;
+}
+
+.player-option>.btn-info:hover {
+    scale: 1.2 1.2;
+}
+
+.player-option>.btn-info:focus {
+    background-color: #04ACCC;
+}
+
+
+
+.menu {
+
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    overflow-y: scroll;
+}
+
+.menu-info {
+    font-size: 0.7em;
+}
+
+.menu>div>button {
+
+    width: 50px;
+    height: 50px;
+    background-color: #0C7C94;
+    color: #142C54;
+    font-size: 20px;
+
+    transition: 0.2s;
+}
+
+.menu>div>button:hover {
+    scale: 1.2 1.2;
+}
+
+.menu>div>button:focus {
+    background-color: #04ACCC;
+}
+
+.menu>div>h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #04ACCC;
+    margin: auto;
+    font-size: 2.5em;
+
+
+    text-align: center;
+}
+
+.menu>.container>label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #04ACCC;
+
+    font-size: 2em;
+
+}
+
+
+.table-playlist {
+    color: #04ACCC;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 45px 0px 0px 0px;
+    width: 100%;
+}
+
+.table-playlist>thead>tr>td {
+    font-size: 25px;
+    border-bottom: #244C6C solid 2px;
+}
+
+.table-playlist>tbody>tr>td {
+    border-bottom: solid 1px;
+    border-radius: 5%;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 480px) {
+    .music-cover {
+        margin: auto;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        border: #0C7C94 3px solid;
+        border-radius: 10%;
+    }
+}
